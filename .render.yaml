@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: sentiment-app
+    runtime: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: TRANSFORMERS_CACHE
+        value: /mnt/data/cache
+    plan: free
