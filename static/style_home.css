@@ -1,0 +1,108 @@
+/* style_home.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #fdfcfb, #e2d1c3);
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+.header {
+    background-color: #004466;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    position: relative;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.logo {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+    height: 70px;
+    border-radius: 50%;
+    border: 2px solid white;
+    background-color: white;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+}
+
+.team {
+    padding: 50px 20px 30px;
+    text-align: center;
+    background-color: #f0f8ff;
+}
+
+.team h2 {
+    font-size: 1.8em;
+    margin-bottom: 30px;
+    color: #004466;
+}
+
+.member {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 4px solid #004466;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.member h3 {
+    margin-top: 12px;
+    font-size: 1.1em;
+    color: #222;
+}
+
+.intro {
+    background-color: #ffffff;
+    padding: 40px 25px;
+    max-width: 900px;
+    margin: 40px auto;
+    line-height: 1.8;
+    font-size: 1.05em;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.1);
+}
+
+.intro a {
+    color: #006699;
+    text-decoration: none;
+}
+
+.intro a:hover {
+    text-decoration: underline;
+}
+
+.container {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.btn {
+    background-color: #004466;
+    color: white;
+    padding: 14px 28px;
+    font-size: 1em;
+    border: none;
+    border-radius: 8px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #006699;
+}

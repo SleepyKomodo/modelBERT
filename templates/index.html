@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediksi Sentimen</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_index.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Prediksi Sentimen Teks</h1>
+        <form action="{{ url_for('predict') }}" method="post">
+            <textarea name="text" placeholder="Masukkan teks di sini..." required>{{ request.form.get('text', '') }}</textarea>
+            <button type="submit">Prediksi</button>
+        </form>
+
+        {% if prediction %}
+            <div class="result-box {{ prediction|lower }}">
+                <p><strong>Teks Inputan         :</strong> {{ text }}</p>
+                <p><strong>Hasil Prediksi Model :</strong> {{ prediction }}</p>
+            </div>
+        {% endif %}
+
+        <a href="{{ url_for('home') }}" class="back-link">← Kembali ke Halaman Utama</a>
+    </div>
+</body>
+</html>

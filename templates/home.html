@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beranda Proyek Sentimen</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style_home.css') }}">
+</head>
+<body>
+    <div class="header">
+        <img src="{{ url_for('static', filename='muhammadiyah.png') }}" alt="Logo Kampus" class="logo">
+        <h1>Proyek Analisis Sentimen Teks</h1>
+    </div>
+
+    <div class="team">
+        <h2>Anggota Kelompok</h2>
+        <div class="member">
+            <img src="{{ url_for('static', filename='dikki.jpg') }}" alt="Dikki Prasetyo Isnandar">
+            <h3>Dikki Prasetyo Isnandar</h3>
+        </div>
+        <div class="member">
+            <img src="{{ url_for('static', filename='nuraini.jpg') }}" alt="Nur Aini">
+            <h3>Nur Aini</h3>
+        </div>
+        <div class="member">
+            <img src="{{ url_for('static', filename='rahmawati.jpg') }}" alt="Rahmawati">
+            <h3>Rahmawati</h3>
+        </div>
+        <div class="member">
+            <img src="{{ url_for('static', filename='thaufan.jpg') }}" alt="Thaufan Idris Kamal">
+            <h3>Thaufan Idris Kamal</h3>
+        </div>
+    </div>
+
+    <div class="intro">
+        <p>
+            👋 <strong>Selamat Datang di Website Proyek Kami!</strong><br><br>
+            Halo! Kami adalah kelompok mahasiswa dari Universitas Muhammadiyah Buton fakultas Teknik mata kuliah Rekayasa Perangkat Lunak, dan website ini merupakan hasil dari proyek tugas akhir kami.<br><br>
+            Proyek ini berfokus pada Prediksi Sentimen Teks Berbahasa Indonesia — yaitu mengklasifikasikan suatu teks ke dalam kategori positif, netral, atau negatif. Yang membuat proyek ini istimewa, model analisis sentimen yang digunakan kami latih sendiri menggunakan datasets open source dari website <a href="https://huggingface.co" target="_blank" rel="noopener">https://huggingface.co</a>
+            dan pendekatan berbasis Transformers (model IndoBERT).<br><br>
+            Website ini dirancang untuk menjadi Interface pengguna agar dapat mencoba model machine learning kami, sehingga siapa pun dapat menguji prediksi sentimen teks secara langsung dan melihat hasilnya dalam sekejap.<br><br>
+            Kami mengerjakan proyek ini di bawah bimbingan dosen, Ibu Sri Martianingsih Jibran, yang memberikan arahan dan ilmu yang sangat berharga dalam setiap tahap pengembangan.<br><br>
+            Selamat mencoba fitur-fitur kami, dan semoga bermanfaat!<br>
+            Salam teknik,<br>
+            Kelompok Sentimen Tekno
+        </p>
+    </div>
+        <div class="container">
+        <a href="{{ url_for('predict') }}" class="btn">Menuju Halaman Prediksi</a>
+    </div>
+</body>
+</html>
